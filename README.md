@@ -3,19 +3,13 @@
 ## test if condor works on T3 machine
 To test condor on different machines, change the `BASEDIR` in `condor_sub.py`
 
-also add
-```
-Requirements =  machine == "r510-0-6.privnet"
-```
- to `jdl_template` to test machine
+also add `Requirements =  machine == "r510-0-6.privnet"`
+to `jdl_template`.
 
-do
-```
-python condor_sub.py 2 '/bin/sleep 10'
-```
+simply do `python condor_sub.py 2 '/bin/sleep 10'`
 to test if we can run condor on `r510-0-6.privnet`
 
-## test write files to `/store/user` from lpc or lxplus
+## test writing files to `/store/user` from lpc or lxplus
 ### Recipe
 
 ```bash
